@@ -19,9 +19,35 @@ app.use(cors({ origin: true }))
 app.use("/api/v1/users",userRouter)
 app.use("/api/v1/tasks", taskRouter)
  
+app.get("/2",(req,res)=>{
+    res.send([
+         {
+        "item_id": "_DVs8XyIk",
+        "product_name": "PG13.5 Cable Gland White 9-12mm Dia",
+        "package_id": "VxnnZzizt",
+        "quantity": 2,
+        "threshold_quantity": 3
+    },
+    {
+        "item_id": "_8aAi4HTH",
+        "product_name": "470pf 50v Ceramic",
+        "package_id": "X6ANoUNj9",
+        "quantity": 13,
+        "threshold_quantity": 3
+    },
+    {
+        "item_id": "_pxFGMgDU",
+        "product_name": "1M OHM",
+        "package_id": "Gr6cDqrFU",
+        "quantity": 20,
+        "threshold_quantity": 5
+    },
+   
+])
+})
 
 
-app.get("/",(req,res)=>{
+app.get("/1",(req,res)=>{
     res.send([
     {
         "item_id": "_8aAi4HTH",
