@@ -22,7 +22,29 @@ app.use("/api/v1/tasks", taskRouter)
 
 
 app.get("/",(req,res)=>{
-    res.send([{"id":1,"name":"tracklist-1"},{"id":2,"name":"tracklist-2"},{"id":3,"name":"tracklist-3"},{"id":4,"name":"tracklist-4"},{"id":4,"name":"tracklist-4"}])
+    res.send([
+    {
+        "item_id": "_8aAi4HTH",
+        "product_name": "470pf 50v Ceramic",
+        "package_id": "X6ANoUNj9",
+        "quantity": 13,
+        "threshold_quantity": 3
+    },
+    {
+        "item_id": "_pxFGMgDU",
+        "product_name": "1M OHM",
+        "package_id": "Gr6cDqrFU",
+        "quantity": 20,
+        "threshold_quantity": 5
+    },
+    {
+        "item_id": "_DVs8XyIk",
+        "product_name": "PG13.5 Cable Gland White 9-12mm Dia",
+        "package_id": "VxnnZzizt",
+        "quantity": 2,
+        "threshold_quantity": 3
+    }
+])
 })
 
 //midddleware for error handling
