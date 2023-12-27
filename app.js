@@ -22,7 +22,7 @@ app.use("/api/v1/tasks", taskRouter)
 
 
 app.get("/",(req,res)=>{
-    res.send("nice working")
+    res.send([{"id":1,"name":"tracklist-1"},{"id":2,"name":"tracklist-2"},{"id":3,"name":"tracklist-3"},{"id":4,"name":"tracklist-4"},{"id":4,"name":"tracklist-4"}])
 })
 
 //midddleware for error handling
