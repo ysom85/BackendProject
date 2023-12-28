@@ -45,7 +45,9 @@ app.get("/2",(req,res)=>{
    
 ])
 })
-
+app.get("/",(req,res)=>{
+    res.send([{"id":1,"name":"tracklist-1"},{"id":2,"name":"tracklist-2"},{"id":3,"name":"tracklist-3"},{"id":4,"name":"tracklist-4"},{"id":4,"name":"tracklist-4"}])
+})
 
 app.get("/1",(req,res)=>{
     res.send([
